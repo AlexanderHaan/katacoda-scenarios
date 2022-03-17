@@ -1,18 +1,12 @@
 #/bin/bash
 
-# Run Neo4j image and start it
-docker build -t neo4j . \
-    --rm
-
 docker run \
-    --rm \
-    -p 7474:7474 \
-    -p 7687:7687 \
     --name neo4j \
-    neo4j
-
-sleep 10
-
-docker exec neo4j /bin/bash /var/lib/neo4j/import_data.sh
-
-sleep 10
+    -p7474:7474 -p7687:7687 \
+    -d \
+    -v $HOME/neo4j/data:/data \
+    -v $HOME/neo4j/logs:/logs \
+    -v $HOME/neo4j/import:/var/lib/neo4j/import \
+    -v $HOME/neo4j/plugins:/plugins \
+    --env NEO4J_AUTH=neo4j/test \
+    neo4j:latest

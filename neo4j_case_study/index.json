@@ -19,10 +19,10 @@
         }
     },
     "environment": {
-        "uilayout": "iframe"
+        "uilayout": "terminal-iframe"
     },
     "backend": {
         "imageid": "ubuntu:2004",
-        "port": 7687
+        "port": 7474
     }
 }

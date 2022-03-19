@@ -5,4 +5,5 @@ docker run \
     -p 7474:7474 -p 7687:7687 \
     lexha/neo4j-katacoda:latest
 sleep 10
+echo "YOU CAN NOW START"
 docker exec -it neo4j-katacoda bash 

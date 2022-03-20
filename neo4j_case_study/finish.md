@@ -2,6 +2,8 @@ Congratulation! You learned the fundamentals how the Neo4j graph database works 
 
 If you want to learn more about graph databases and Cypher you can read the docs of Cypher [here](https://neo4j.com/docs/cypher-manual/current/introduction/).
 
+The data used in this katacoda is from [here](https://www.kaggle.com/danielgrijalvas/movies)
+
 Sources:
 - Neo4j docs https://neo4j.com/docs/
 - Graph concepts https://neo4j.com/docs/getting-started/current/graphdb-concepts/

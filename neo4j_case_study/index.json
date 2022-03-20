@@ -2,7 +2,7 @@
     "title": "Implementation of a case study with Neo4j",
     "description": "In this katacoda you will use a Neo4j database, create a graph model and write queries to gain information.",
     "difficulty": "Beginner",
-    "time": "5 minutes",
+    "time": "7 minutes",
     "details": {
         "steps": [
             {
@@ -31,7 +31,7 @@
         }
     },
     "environment": {
-        "uilayout": "terminal-iframe"
+        "uilayout": "terminal"
     },
     "backend": {
         "imageid": "ubuntu:2004",

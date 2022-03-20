@@ -6,6 +6,10 @@ Let's try a more difficult query. How do you determine with which stars have Que
 
 This query looks almost identical with our last statement from the previous step. The only thing that changed is that we added `<-[:PLAYEDIN]- (s:Star)` after the movie node. This allows us to search for the star that played in the movie which was directed by Quentin Tarantino. As you can see, the `MATCH` clause allows us to specify patterns that can include multiple relationships.
 
+If you would type this query in the Neo4j Browser and returning the nodes instead of their properties you will get following graph visualized.
+
+![Graph Query](./assets/graph-query.png)
+
 # Sorting
 
 What if from our last result we want to know which movie had the best score. Cypher queries allows us to sort the results by their values. Try the following query:
@@ -14,7 +18,7 @@ What if from our last result we want to know which movie had the best score. Cyp
 MATCH (d:Director {director: "Quentin Tarantino"}) -[:DIRECTED]-> (m:Movie) <-[:PLAYEDIN]- (s:Star)
 RETURN d.director, m.name, m.score, s.star
 ORDER BY m.score DESC
-LIMIT 1
+LIMIT 1;
 ```{{execute}}
 
 As you can see the combination of the `ORDER` clause and the `LIMIT` clause allows you to order the movies by the score and then select the best one. 

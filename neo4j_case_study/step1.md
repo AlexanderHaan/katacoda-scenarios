@@ -8,4 +8,4 @@ Now you are in the terminal of your Neo4j server. At this moment your Neo4j-data
 
 `./import_data.sh`{{execute}}
 
-This may take 1-2 minutes. This data has information about movies e.g. the movie title, the director, the rating. The CSV-file is about 1MB big, so it may take some seconds. In the next step you will learn how to interpret tha data in a Neo4j database and how it is organized.
+This may take 1-2 minutes. This data has information about movies e.g. the movie title, the director, the rating. The CSV-file is about 1MB big, so it may take some time. In the next step you will learn how to interpret tha data in a Neo4j database and how it is organized.
